@@ -1,0 +1,18 @@
+---
+title: "teeth"
+author: "maxaweis"
+date: "2019-04-23"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+---
+
+## Introduction
+
+```{r}
+teeth <- read.csv("data/teeth.csv",row.names=1)
+head(teeth)
+boxplot(len~dose,teeth)
+rnorm(3)
+```
+
